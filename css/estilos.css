@@ -28,13 +28,13 @@ body {
 header {
     position: fixed;
     background: #257985;
-    height: 100px;
+    height: 70px;
     width: 100%;
-    min-height: 100px;
+    min-height: 70px;
 }
 
 header .menu{
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,9 +43,9 @@ header .menu{
 
 
 header .menu a{
-    margin: 15px 30px;
+    margin: 10px 30px;
     color: #fff;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 1.3em;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -62,7 +62,7 @@ header .menu a:hover{
 /* --------------- Presentacion --------------- */
 
 .blanco{
-    height: 100px;
+    height: 70px;
     width: 100%;
 }
 
@@ -73,7 +73,17 @@ header .menu a:hover{
     background-position: center;
     min-height: 600px;
     display: block;
+    width: 100%;
 }
+/* .fondo{
+    background: url(../img/cplse.jpeg) rgba(94, 168, 167, 1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 600px; 
+    display: block;
+    width: 100%;
+} */
 
 .fondo .fondo-color{
     background: rgba(94, 168, 167, .4);
@@ -103,7 +113,7 @@ header .menu a:hover{
 
 /* --------------- Nosotros ---------------*/
 .main .nosotros{
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .main .nosotros .titulo{
@@ -161,7 +171,7 @@ header .menu a:hover{
 /* --------------- Servicios ---------------*/
 .main .servicios {
     background: rgba(94, 168, 167, .1);
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .main .servicios .contenedor {
@@ -207,7 +217,7 @@ header .menu a:hover{
 /* --------------- Equipo ---------------*/
 
 .main .equipo{
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .main .equipo .titulo{
@@ -222,7 +232,7 @@ header .menu a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .main .contenedor .contenedor-equipo .integrante {
@@ -233,10 +243,11 @@ header .menu a:hover{
 .main .contenedor .contenedor-equipo .integrante .thumb-integrante{
     width: 100%;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .main .contenedor .contenedor-equipo .integrante .thumb-integrante img{
-    width: 100%;
+    width: 90%;
     vertical-align: top;
     border-radius: 100%;
     border: 10px solid #FF4447;
@@ -256,10 +267,10 @@ header .menu a:hover{
 
 footer {
     background: #257985;
- /*    height: 100px; */
+   /*  height: 70px; */
     width: 100%;
-    min-height: 100px;
-    padding: 60px 0;
+    min-height: 70px;
+    padding: 35px 0;
 }
 
 /* footer .redes-sociales {
@@ -267,7 +278,7 @@ footer {
     padding: 40px 0;
 } */
 
-footer .contenedor {
+footer .contenedor-redes-sociales {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -292,6 +303,12 @@ footer .redes-sociales .instagram:hover{background: #833ab4;}
 
 /* --------------- Media queries --------------- */
 
+@media screen and (max-width: 860px){
+    .main .contenedor .contenedor-nosotros .postulados .icono{
+        font-size: 10em;
+    }
+}
+
 @media screen and (max-width: 800px){
     header .menu {
         justify-content: center;
@@ -300,22 +317,88 @@ footer .redes-sociales .instagram:hover{background: #833ab4;}
     .main .servicios .contenedor-servicios .servicio{
         width: 45%;
     }
+
+    .main .contenedor .contenedor-equipo .integrante {
+        width: 45%;
+    }
+    
+    .main .contenedor .contenedor-equipo .integrante .thumb-integrante{
+        width: 100%;
+    }
+    
+    .main .contenedor .contenedor-equipo .integrante .thumb-integrante img{
+        width: 100%;
+    }
+
 }
 
-@media screen and (max-width: 600px){
-    header .menu {
+@media screen and (max-width: 700px){
+
+    .main .contenedor .contenedor-nosotros {
+        flex-direction: column;
         justify-content: center;
     }
 
-    .main .servicios .contenedor-servicios .servicio{
+    .main .contenedor .contenedor-nosotros .postulados {
+        width: 100%;
+        justify-items: center;
+    }
+
+    .main .contenedor .contenedor-equipo .integrante {
         width: 45%;
+    }
+    
+    .main .contenedor .contenedor-equipo .integrante .thumb-integrante{
+        width: 100%;
+    }
+    
+    .main .contenedor .contenedor-equipo .integrante .thumb-integrante img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    .main .contenedor .contenedor-nosotros {
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main .contenedor .contenedor-nosotros .postulados {
+        width: 100%;
+        justify-items: center;
     }
 }
 
 @media screen and (max-width: 500px){
-
-    .fondo .contenedor-texto .texto .nombre{
-        font-size: 15px;
-        line-height: 30px;
+    
+    .main .contenedor .contenedor-servicios {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    
+    .main .contenedor .contenedor-servicios .servicio {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    
+    .main .contenedor .contenedor-servicios .servicio .descripcion{
+        text-align: center;
+    }
+
+    .main .contenedor .contenedor-equipo .integrante {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    
+    .main .contenedor .contenedor-equipo .integrante .thumb-integrante{
+        width: 100%;
+    }
+    
+    .main .contenedor .contenedor-equipo .integrante .thumb-integrante img{
+        width: 100%;
+    }
+    
 }
