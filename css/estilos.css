@@ -251,3 +251,71 @@ header .menu a:hover{
     text-align: center;
     font-size: 1.5em;
 }
+
+/* --------------- Footer --------------- */
+
+footer {
+    background: #257985;
+ /*    height: 100px; */
+    width: 100%;
+    min-height: 100px;
+    padding: 60px 0;
+}
+
+/* footer .redes-sociales {
+    background: #257985;
+    padding: 40px 0;
+} */
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redes-sociales .facebook:hover{background: #3b5998;}
+footer .redes-sociales .twitter:hover{background: #1da1f2;}
+footer .redes-sociales .youtube:hover{background: #ff0000;}
+footer .redes-sociales .instagram:hover{background: #833ab4;}
+
+/* --------------- Media queries --------------- */
+
+@media screen and (max-width: 800px){
+    header .menu {
+        justify-content: center;
+    }
+
+    .main .servicios .contenedor-servicios .servicio{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header .menu {
+        justify-content: center;
+    }
+
+    .main .servicios .contenedor-servicios .servicio{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .fondo .contenedor-texto .texto .nombre{
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
