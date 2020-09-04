@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* --------------- Header --------------- */
+/* header {
+    background: #257985;
+    min-height: 100px;
+} */
+
+
+
+header {
+    position: fixed;
+    background: #257985;
+    height: 100px;
+    width: 100%;
+    min-height: 100px;
+}
+
+header .menu{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .menu a{
+    margin: 15px 30px;
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid #FF4447;
+}
+
+/* .fix {
+    position: fixed;
+} */
+
+/* --------------- Presentacion --------------- */
+
+.blanco{
+    height: 100px;
+    width: 100%;
+}
+
+.fondo{
+    background: url(../img/cplse.jpeg) rgba(94, 168, 167, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    display: block;
+}
+
+.fondo .fondo-color{
+    background: rgba(94, 168, 167, .4);
+}
+
+.fondo .contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0;
+}
+
+.fondo .contenedor-texto .texto{
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 80px 20px;
+    width: 800px;
+}
+
+.fondo .contenedor-texto .texto .nombre{
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/* --------------- Nosotros ---------------*/
+.main .nosotros{
+    padding: 30px 0;
+}
+
+.main .nosotros .titulo{
+    text-align: center;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 30px;
+    color: #FF4447;
+}
+
+.main .contenedor .contenedor-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .contenedor .contenedor-nosotros .postulados {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+
+.main .contenedor .contenedor-nosotros .postulados .icono{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 200px;
+    color: rgba(94, 168, 167, 1);;
+    vertical-align: top;
+    text-align: center;
+}
+
+.main .contenedor .contenedor-nosotros .postulados .subtitulo{
+    color: #257985;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.main .contenedor .contenedor-nosotros .postulados .texto{
+    width: 100%;
+    color: #257985;
+    margin-bottom: 0px;
+    text-align: justify;
+    color: #474040;
+}
+
+/* .main .nosotros .postulados {
+    text-align: justify;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto;
+}
+ */
+/* --------------- Servicios ---------------*/
+.main .servicios {
+    background: rgba(94, 168, 167, .1);
+    padding: 30px 0;
+}
+
+.main .servicios .contenedor {
+    overflow: hidden;
+}
+
+.main .servicios .titulo {
+    text-align: center;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 50px;
+    color: #FF4447;
+}
+
+.main .contenedor .contenedor-servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .contenedor .contenedor-servicios .servicio {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.main .contenedor .contenedor-servicios .servicio .thumb-servicio{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .contenedor .contenedor-servicios .servicio .thumb-servicio img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.main .contenedor .contenedor-servicios .servicio .descripcion{
+    color: #257985;
+    margin-bottom: 10px;
+}
+
+/* --------------- Equipo ---------------*/
+
+.main .equipo{
+    padding: 30px 0;
+}
+
+.main .equipo .titulo{
+    text-align: center;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 30px;
+    color: #FF4447;
+}
+
+.main .contenedor .contenedor-equipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .contenedor .contenedor-equipo .integrante {
+    width: 35%;
+    margin-bottom: 50px;
+}
+
+.main .contenedor .contenedor-equipo .integrante .thumb-integrante{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .contenedor .contenedor-equipo .integrante .thumb-integrante img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 100%;
+    border: 10px solid #FF4447;
+}
+
+.main .contenedor .contenedor-equipo .integrante .descripcion{
+    color: #257985;
+    margin-bottom: 10px;
+}
+
+.main .contenedor .contenedor-equipo .integrante .descripcion .nombre-integrante{
+    text-align: center;
+    font-size: 1.5em;
+}
