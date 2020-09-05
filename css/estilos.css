@@ -71,29 +71,20 @@ header .menu a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 600px;
     display: block;
     width: 100%;
 }
-/* .fondo{
-    background: url(../img/cplse.jpeg) rgba(94, 168, 167, 1);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    min-height: 600px; 
-    display: block;
-    width: 100%;
-} */
 
 .fondo .fondo-color{
-    background: rgba(94, 168, 167, .4);
+    background: rgba(94, 168, 167, .5);
+    height: inherit;
 }
 
 .fondo .contenedor-texto{
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin: 190px 0;
+    align-items: center;
+    margin: 10% 0;
 }
 
 .fondo .contenedor-texto .texto{
@@ -102,7 +93,8 @@ header .menu a:hover{
     display: inline-block;
     text-align: center;
     padding: 80px 20px;
-    width: 800px;
+    width: 500px;
+    height: inherit;
 }
 
 .fondo .contenedor-texto .texto .nombre{
@@ -401,4 +393,51 @@ footer .redes-sociales .instagram:hover{background: #833ab4;}
         width: 100%;
     }
     
+}
+
+
+@media screen and (max-width: 1000px){
+    .fondo{
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .fondo{
+        height: 400px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .fondo{
+        height: 300px;
+    }
+
+    .fondo .contenedor-texto .texto{
+        width: 50%;
+        padding: 50px 20px;
+    }
+    
+    .fondo .contenedor-texto .texto .nombre{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fondo{
+        height: 200px;
+    }
+
+    .fondo .contenedor-texto .texto{
+        width: 100%;
+        padding: 25px;
+        border: none;
+    }
+    
+    .fondo .contenedor-texto .texto .nombre{
+        font-size: 20px;
+        line-height: 20px;
+    }
 }
