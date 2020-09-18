@@ -1,0 +1,10 @@
+.barraMenu {
+    background: #257985;
+    a {
+        color: #ffffff;
+        border-bottom: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid #FF4447;
+        }
+    }
+}

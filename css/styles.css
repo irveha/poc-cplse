@@ -1,0 +1,117 @@
+body {
+  padding-top: 56px;
+}
+
+.subtitulo {
+  color: #ff4447;
+  font-weight: 600;
+}
+
+.barraMenu {
+  background: #257985;
+}
+
+.barraMenu a {
+  /* color: #ffffff; */
+  border-bottom: 2px solid transparent;
+}
+
+.barraMenu a:hover {
+  border-bottom: 2px solid #FF4447;
+}
+
+.jumbotron {
+  padding: 15em 2em;
+  background-color: #5ea8a7;
+  opacity: .9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 168, 167, 0.5)), to(rgba(94, 168, 167, 0.5))), url(../img/cplse.jpeg);
+  background-image: linear-gradient(to bottom, rgba(94, 168, 167, 0.5) 0%, rgba(94, 168, 167, 0.5) 100%), url(../img/cplse.jpeg);
+}
+
+.jumbotron h1 {
+  /*  color: #ffffff; */
+  /*  border: 1px solid #ffffff; */
+  /*  width: 100%;
+        height: 100px; */
+}
+
+.bg-cover {
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cplse-texto {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 80px 20px;
+  width: 500px;
+  height: inherit;
+}
+
+.nosotros {
+  padding: 56px;
+}
+
+.nosotros .postulado {
+  margin-top: 40px;
+}
+
+.nosotros .postulado i {
+  color: #5ea8a7;
+  font-size: 200px;
+  vertical-align: top;
+}
+
+.nosotros .postulado h3 {
+  text-align: center;
+  color: #257985;
+}
+
+.nosotros .postulado p {
+  text-align: left;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.servicios {
+  background: rgba(94, 168, 167, 0.1);
+  padding: 56px 0;
+}
+
+.servicios .servicio {
+  margin-top: 40px;
+}
+
+.servicios .servicio img {
+  border-radius: 5px;
+}
+
+.servicios .servicio p {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.equipo {
+  padding: 56px 0;
+}
+
+.equipo .card {
+  margin-top: 40px;
+  border: none;
+}
+
+.equipo .card img {
+  border: 10px solid #ff4447;
+}
+
+.equipo .card .card-body {
+  padding-top: 30px;
+  color: #257985;
+}
+
+footer {
+  background: #257985;
+}
+/*# sourceMappingURL=styles.css.map */
