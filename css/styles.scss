@@ -8,7 +8,31 @@ $degradado : rgba($color: $lagoon, $alpha: 0.5);
 body{
     padding-top: 56px;
 }
+.contenedor {
+  position: fixed;
+  right: 0;
+  bottom:10px;
+  text-align: center;
+  z-index: 1000;
+  a {
+    .whatsapp{
+        border-radius: 100%;
+        font-size: 30px;
+        vertical-align: top;
+        margin-bottom: 10px;
+        background:  #25d366;
+        color: $white;
+    }
 
+    .messenger{
+        background: #0084ff;
+        border-radius: 100%;
+        font-size: 30px;
+        color:  $white;
+        vertical-align: top;        
+    }
+  }
+}
 .subtitulo {
     color: $raspberry;
     font-weight: 600;
@@ -31,12 +55,12 @@ body{
     background-color: $lagoon;
     opacity: .9;
     background-image:  linear-gradient(to bottom,  $degradado 0%, $degradado 100%), url(../img/cplse.jpeg);
-    h1{
+/*     h1{ */
        /*  color: #ffffff; */
        /*  border: 1px solid #ffffff; */
        /*  width: 100%;
         height: 100px; */
-    }
+/*     } */
 }
 
 .bg-cover {
@@ -56,6 +80,10 @@ body{
 
 .nosotros {
     padding: 56px;
+    .logo {
+        background: #000;
+        border-radius: 100%;
+    }
     .postulado {
         margin-top: 40px;
         i {
@@ -108,3 +136,16 @@ body{
 footer {
     background: $saltwater;
 }
+
+/* @media screen and (max-width: 768px) {
+    .contenedor {
+        a {
+            .whatsapp{
+                font-size: 30px;
+            }
+            .messenger{
+                font-size: 30px;
+            }
+        }
+    }
+} */

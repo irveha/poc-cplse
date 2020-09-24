@@ -2,6 +2,31 @@ body {
   padding-top: 56px;
 }
 
+.contenedor {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.contenedor a .whatsapp {
+  border-radius: 100%;
+  font-size: 30px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  background: #25d366;
+  color: #ffffff;
+}
+
+.contenedor a .messenger {
+  background: #0084ff;
+  border-radius: 100%;
+  font-size: 30px;
+  color: #ffffff;
+  vertical-align: top;
+}
+
 .subtitulo {
   color: #ff4447;
   font-weight: 600;
@@ -26,13 +51,12 @@ body {
   opacity: .9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 168, 167, 0.5)), to(rgba(94, 168, 167, 0.5))), url(../img/cplse.jpeg);
   background-image: linear-gradient(to bottom, rgba(94, 168, 167, 0.5) 0%, rgba(94, 168, 167, 0.5) 100%), url(../img/cplse.jpeg);
-}
-
-.jumbotron h1 {
+  /*     h1{ */
   /*  color: #ffffff; */
   /*  border: 1px solid #ffffff; */
   /*  width: 100%;
         height: 100px; */
+  /*     } */
 }
 
 .bg-cover {
@@ -52,6 +76,11 @@ body {
 
 .nosotros {
   padding: 56px;
+}
+
+.nosotros .logo {
+  background: #000;
+  border-radius: 100%;
 }
 
 .nosotros .postulado {
@@ -114,4 +143,17 @@ body {
 footer {
   background: #257985;
 }
+
+/* @media screen and (max-width: 768px) {
+    .contenedor {
+        a {
+            .whatsapp{
+                font-size: 30px;
+            }
+            .messenger{
+                font-size: 30px;
+            }
+        }
+    }
+} */
 /*# sourceMappingURL=styles.css.map */
